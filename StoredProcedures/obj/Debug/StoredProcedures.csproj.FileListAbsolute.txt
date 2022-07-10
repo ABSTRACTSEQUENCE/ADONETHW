@@ -1,0 +1,7 @@
+C:\Users\AbstractSequence\source\repos\StoredProcedures\bin\Debug\StoredProcedures.exe.config
+C:\Users\AbstractSequence\source\repos\StoredProcedures\bin\Debug\StoredProcedures.exe
+C:\Users\AbstractSequence\source\repos\StoredProcedures\bin\Debug\StoredProcedures.pdb
+C:\Users\AbstractSequence\source\repos\StoredProcedures\obj\Debug\StoredProcedures.csproj.AssemblyReference.cache
+C:\Users\AbstractSequence\source\repos\StoredProcedures\obj\Debug\StoredProcedures.csproj.CoreCompileInputs.cache
+C:\Users\AbstractSequence\source\repos\StoredProcedures\obj\Debug\StoredProcedures.exe
+C:\Users\AbstractSequence\source\repos\StoredProcedures\obj\Debug\StoredProcedures.pdb
