@@ -1,0 +1,11 @@
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\bin\Debug\EmployeeWF.exe.config
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\bin\Debug\EmployeeWF.exe
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\bin\Debug\EmployeeWF.pdb
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.csproj.AssemblyReference.cache
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.Form1.resources
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.Properties.Resources.resources
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.csproj.GenerateResource.cache
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.csproj.CoreCompileInputs.cache
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.exe
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.pdb
+C:\Users\AbstractSequence\source\repos\ADONET\EmployeeWF\obj\Debug\EmployeeWF.Insert.resources
