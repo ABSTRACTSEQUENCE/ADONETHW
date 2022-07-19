@@ -17,6 +17,7 @@ namespace EmployeeWF
     {
         SqlDataAdapter adapter;
         List<SqlCommand> to_del;
+        List<SqlCommand> to_add;
         DataSet dataset = new DataSet();
         //SqlCommandBuilder builder;
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["str"].ConnectionString);
@@ -25,6 +26,7 @@ namespace EmployeeWF
             InitializeComponent();
             dataGridView1.MultiSelect = false;
             to_del = new List<SqlCommand>();
+            to_add = new List<SqlCommand>();
             //builder = new SqlCommandBuilder(adapter);
             bt_save.Enabled = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -45,9 +47,11 @@ namespace EmployeeWF
             Insert ins = new Insert(conn, dataset);
             ins.ShowDialog();
 
-            adapter.InsertCommand = ins.cmd;
+            to_add.Add(ins.cmd);
 
             dataset = ins.ds;
+
+            ins.Dispose();
 
             bt_save.Enabled = true;
         }
@@ -57,12 +61,12 @@ namespace EmployeeWF
             if (dataGridView1.SelectedRows.Count == 0)
                 MessageBox.Show("Не выбран ни один элемент");
 
-            adapter.DeleteCommand = new SqlCommand("stp_EmployeeDelete", conn);
-            adapter.DeleteCommand.CommandType = CommandType.StoredProcedure;
-            adapter.DeleteCommand.Parameters.AddWithValue("EmployeeID", dataGridView1.SelectedRows[0].Cells[0].Value);
-            adapter.DeleteCommand.Parameters.AddWithValue("Result", 1);
+            SqlCommand cmd = new SqlCommand("stp_EmployeeDelete", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("EmployeeID", dataGridView1.SelectedRows[0].Cells[0].Value);
+            cmd.Parameters.AddWithValue("Result", 1);
             dataGridView1.Rows.Remove(dataGridView1.SelectedRows[0]);
-            to_del.Add(adapter.DeleteCommand);
+            to_del.Add(cmd);
             bt_save.Enabled = true;
         }
 
@@ -72,8 +76,16 @@ namespace EmployeeWF
             {
                 adapter.DeleteCommand = i;
                 adapter.DeleteCommand.ExecuteNonQuery();
+                adapter.DeleteCommand.Dispose();
             }
-            adapter.Update(dataset);
+
+            foreach (SqlCommand i in to_add)
+            {
+                adapter.InsertCommand = i;
+                adapter.InsertCommand.ExecuteNonQuery();
+                adapter.InsertCommand.Dispose();
+            }
+            //adapter.Update(dataset);
             bt_save.Enabled = false;
 
         }

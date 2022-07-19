@@ -40,7 +40,7 @@ namespace EmployeeWF
             DataRow row = ds.Tables[0].NewRow();
             try
             {
-                row.ItemArray = new object[] { 5, pars[1].Value, pars[2].Value, pars[3].Value, pars[4].Value };
+                row.ItemArray = new object[] { 0, pars[1].Value, pars[2].Value, pars[3].Value, pars[4].Value };
             }
             catch (System.Exception)
             {
