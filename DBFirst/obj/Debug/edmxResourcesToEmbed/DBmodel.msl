@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AdonetHWModelContainer" CdmEntityContainer="AdonetHWEntities">
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="AdonetHWModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="stp_EmployeeAdd" FunctionName="Хранилище AdonetHWModel.stp_EmployeeAdd" />
+    <FunctionImportMapping FunctionImportName="stp_EmployeeDelete" FunctionName="Хранилище AdonetHWModel.stp_EmployeeDelete" />
+    <FunctionImportMapping FunctionImportName="stp_EmployeeUpdate" FunctionName="Хранилище AdonetHWModel.stp_EmployeeUpdate" />
+  </EntityContainerMapping>
+</Mapping>

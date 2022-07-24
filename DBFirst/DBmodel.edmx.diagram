@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="954aa73b83524a5ba6c041e5f79b079f" Name="Diagram1">
+      </Diagram>
+      <Diagram DiagramId="612fce0c2ca746c6b2dfca1a295a2338" Name="Diagram2" >
+        <EntityTypeShape EntityType="AdonetHWModel.Employee" Width="1.5" PointX="2.25" PointY="1.25" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

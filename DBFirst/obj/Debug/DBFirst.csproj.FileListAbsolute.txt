@@ -1,0 +1,13 @@
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\DBFirst.exe.config
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\DBFirst.exe
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\DBFirst.pdb
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\EntityFramework.dll
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\EntityFramework.xml
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\obj\Debug\DBFirst.csproj.AssemblyReference.cache
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\obj\Debug\DBFirst.csproj.CoreCompileInputs.cache
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\obj\Debug\DBFirst.csproj.CopyComplete
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\obj\Debug\DBFirst.exe
+C:\Users\AbstractSequence\source\repos\ADONET\DBFirst\obj\Debug\DBFirst.pdb

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdonetHWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+    <Property Name="PositionID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="AdonetHWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <FunctionImport Name="stp_EmployeeAdd">
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="BirthDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PositionID" Mode="In" Type="Int32" />
+      <Parameter Name="EmployeeID" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="stp_EmployeeDelete">
+      <Parameter Name="EmployeeID" Mode="In" Type="Int32" />
+      <Parameter Name="Result" Mode="InOut" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="stp_EmployeeUpdate">
+      <Parameter Name="EmployeeID" Mode="In" Type="Int32" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="BirthDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PositionID" Mode="In" Type="Int32" />
+      <Parameter Name="Result" Mode="InOut" Type="Boolean" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
